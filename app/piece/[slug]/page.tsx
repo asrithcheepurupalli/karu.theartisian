@@ -22,9 +22,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const piece = getPiece(slug);
-  if (!piece) return { title: "Piece — Artisan Reserve" };
+  if (!piece) return { title: "Piece — Karu" };
   return {
-    title: `${piece.title} — Artisan Reserve`,
+    title: `${piece.title} — Karu`,
     description: piece.blurb,
   };
 }

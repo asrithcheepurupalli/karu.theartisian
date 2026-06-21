@@ -103,7 +103,7 @@ export default function Home() {
             </Reveal>
             <Reveal delay={180} className="vision__col">
               <p className="bodytext">
-                Artisan Reserve exists to end that. A curated house that carries
+                Karu exists to end that. A curated house that carries
                 the work of verified masters straight to collectors abroad —
                 preserving the craft, naming the maker, and paying them what they
                 have always deserved.

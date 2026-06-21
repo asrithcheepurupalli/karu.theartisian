@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Karu — Showcase</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bone:#f1e8d8; --paper:#f8f1e2; --paper2:#ece0cc;
+    --ink:#221a12; --ink-soft:#514637; --ink-faint:#8d8068;
+    --clay:#a2472a; --clay-deep:#84381f; --gold:#b0884a; --gold-light:#c8a566;
+    --indigo:#294049; --line:rgba(34,26,18,.16); --line-soft:rgba(34,26,18,.09);
+    --serif:'Fraunces',Georgia,serif; --sans:'Inter',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:#8d8068;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  @page{ size:A4; margin:0; }
+  .page{
+    position:relative; width:210mm; height:297mm; overflow:hidden;
+    background:var(--bone); color:var(--ink); font-family:var(--sans);
+    margin:0 auto; page-break-after:always; padding:20mm 18mm;
+  }
+  .page:last-child{ page-break-after:auto; }
+  h1,h2,h3,h4{ font-family:var(--serif); font-weight:400; margin:0; line-height:1.04; letter-spacing:-.015em; }
+  em{ font-style:italic; color:var(--clay); }
+  p{ margin:0; }
+  .eyebrow{ font-size:9.5px; letter-spacing:.28em; text-transform:uppercase; color:var(--clay); font-weight:500; margin:0 0 14px; }
+  .eyebrow.g{ color:var(--gold); }
+  .lead{ font-size:13px; line-height:1.6; color:var(--ink-soft); }
+  .fine{ font-size:9px; letter-spacing:.04em; color:var(--ink-faint); }
+
+  /* ---------- COVER ---------- */
+  .cover{ padding:0; color:var(--paper); }
+  .cover__img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+  .cover__scrim{ position:absolute; inset:0; background:linear-gradient(180deg,rgba(20,15,11,.5),rgba(20,15,11,.15) 35%,rgba(20,15,11,.88)); }
+  .cover__in{ position:absolute; inset:0; padding:20mm 18mm; display:flex; flex-direction:column; justify-content:space-between; }
+  .cover__top{ display:flex; justify-content:space-between; align-items:center; font-size:10px; letter-spacing:.18em; text-transform:uppercase; color:rgba(248,241,226,.85); }
+  .cover__mark{ display:flex; align-items:center; gap:9px; font-family:var(--serif); font-size:15px; letter-spacing:0; }
+  .cover__badge{ width:30px;height:30px;border:1px solid rgba(248,241,226,.65);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px; }
+  .cover__bottom h1{ font-size:62px; line-height:.98; letter-spacing:-.03em; }
+  .cover__tag{ font-family:var(--serif); font-style:italic; font-size:22px; color:var(--gold-light); margin:14px 0 18px; }
+  .cover__sub{ font-size:13px; line-height:1.6; color:rgba(248,241,226,.86); max-width:62%; }
+  .cover__foot{ margin-top:26px; font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:rgba(248,241,226,.7); }
+
+  /* ---------- generic ---------- */
+  .kicker{ display:flex; justify-content:space-between; align-items:baseline; border-bottom:1px solid var(--line-soft); padding-bottom:10px; margin-bottom:30px; }
+  .kicker .pg{ font-family:var(--serif); font-size:13px; }
+  .statement{ font-family:var(--serif); font-size:33px; line-height:1.1; letter-spacing:-.02em; max-width:15ch; margin-bottom:26px; }
+  .cols2{ display:grid; grid-template-columns:1fr 1fr; gap:26px; }
+  .cols2 p{ font-size:11.5px; line-height:1.62; color:var(--ink-soft); }
+  .statband{ margin-top:30px; background:var(--ink); color:var(--paper); border-radius:7px; padding:24px 28px; display:flex; align-items:center; gap:26px; }
+  .statband__num{ font-family:var(--serif); font-size:54px; line-height:.9; color:var(--gold-light); }
+  .statband__cap{ font-size:12px; line-height:1.5; color:rgba(248,241,226,.85); max-width:30ch; }
+  .statband__cap em{ color:var(--paper); }
+
+  /* pillars */
+  .pillars{ display:flex; flex-direction:column; }
+  .pillar{ display:grid; grid-template-columns:42px 1fr; gap:18px; padding:17px 0; border-top:1px solid var(--line-soft); }
+  .pillar:last-child{ border-bottom:1px solid var(--line-soft); }
+  .pillar__n{ font-family:var(--serif); font-size:15px; color:var(--clay); }
+  .pillar__t{ font-family:var(--serif); font-size:18px; margin-bottom:4px; }
+  .pillar__b{ font-size:11px; line-height:1.55; color:var(--ink-soft); }
+
+  /* screens */
+  .shotwrap{ margin-bottom:20px; }
+  .shot{ width:100%; border:1px solid var(--line); border-radius:6px; overflow:hidden; display:block; box-shadow:0 12px 34px rgba(34,26,18,.12); }
+  .shot img{ width:100%; display:block; }
+  .shot--crop{ height:103mm; }
+  .shot--crop img{ height:100%; object-fit:cover; object-position:top center; }
+  .cap{ display:flex; justify-content:space-between; gap:14px; margin-top:9px; }
+  .cap__t{ font-family:var(--serif); font-size:14px; }
+  .cap__d{ font-size:10px; color:var(--ink-faint); text-align:right; max-width:48%; line-height:1.4; }
+
+  /* model */
+  .model{ display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+  .mcard{ border:1px solid var(--line); border-radius:7px; padding:20px; background:var(--paper); }
+  .mcard h3{ font-size:17px; margin-bottom:8px; }
+  .mcard p{ font-size:10.5px; line-height:1.55; color:var(--ink-soft); }
+  .mcard .e{ font-size:8.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--clay); font-weight:500; display:block; margin-bottom:9px; }
+  .flow{ margin-top:22px; display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+  .flow div{ border-top:2px solid var(--clay); padding-top:10px; }
+  .flow .n{ font-family:var(--serif); color:var(--clay); font-size:12px; }
+  .flow .t{ font-family:var(--serif); font-size:13px; margin:3px 0 4px; }
+  .flow .b{ font-size:9.5px; line-height:1.45; color:var(--ink-soft); }
+
+  /* audience / status */
+  .aud{ display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:26px; }
+  .aud div{ border:1px solid var(--line); border-radius:6px; padding:15px 17px; }
+  .aud .t{ font-family:var(--serif); font-size:15px; margin-bottom:4px; }
+  .aud .b{ font-size:10px; color:var(--ink-soft); line-height:1.5; }
+  .status{ background:var(--indigo); color:var(--paper); border-radius:7px; padding:24px 26px; }
+  .status .e{ font-size:9px; letter-spacing:.2em; text-transform:uppercase; color:var(--gold-light); margin-bottom:12px; }
+  .status ul{ margin:0; padding:0; list-style:none; display:grid; grid-template-columns:1fr 1fr; gap:11px 24px; }
+  .status li{ font-size:10.5px; line-height:1.45; color:rgba(248,241,226,.9); padding-left:14px; position:relative; }
+  .status li::before{ content:'›'; position:absolute; left:0; color:var(--gold-light); }
+  .endline{ font-family:var(--serif); font-size:26px; line-height:1.12; letter-spacing:-.02em; margin:30px 0 16px; max-width:18ch; }
+  .contact{ display:flex; justify-content:space-between; align-items:flex-end; border-top:1px solid var(--line-soft); padding-top:14px; }
+  .contact .l{ font-size:10.5px; line-height:1.6; color:var(--ink-soft); }
+  .contact .l b{ color:var(--ink); font-weight:500; }
+  .pagenum{ position:absolute; bottom:12mm; right:18mm; font-size:9px; letter-spacing:.14em; color:var(--ink-faint); }
+  .runhead{ position:absolute; top:12mm; left:18mm; font-size:9px; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-faint); }
+</style>
+</head>
+<body>
+
+<!-- 1 · COVER -->
+<section class="page cover">
+  <img class="cover__img" src="./img/cover-bg.jpg" alt="">
+  <div class="cover__scrim"></div>
+  <div class="cover__in">
+    <div class="cover__top">
+      <div class="cover__mark"><span class="cover__badge">K</span> Karu</div>
+      <div>A curated marketplace · Working title</div>
+    </div>
+    <div class="cover__bottom">
+      <h1>Karu<em style="color:var(--gold-light)">.</em></h1>
+      <div class="cover__tag">Handcrafted in India. Collected worldwide.</div>
+      <p class="cover__sub">Buy directly from India's master artisans — every piece verified, every story kept, and the majority of every sale paid straight to the hands that made it.</p>
+      <div class="cover__foot">Showcase · 2026 · made by ac</div>
+    </div>
+  </div>
+</section>
+
+<!-- 2 · THE IDEA -->
+<section class="page">
+  <div class="runhead">Karu · The idea</div>
+  <div class="kicker"><span class="eyebrow" style="margin:0">Who we are</span><span class="pg">01</span></div>
+  <p class="statement">We are India's artisans — selling <em>direct to the world</em>, for the first time on our own terms.</p>
+  <div class="cols2">
+    <p>For generations, the people who make India's finest crafts have sold them for a fraction of their worth. Middlemen took the margin. Buyers across the world never even learned their names — and the traditions quietly died with the generation that held them.</p>
+    <p>Karu exists to reverse that. A curated house that carries the work of verified masters straight to collectors abroad — preserving the craft, naming the maker, and paying them what they have always deserved. Not an open marketplace. A gallery, with a conscience.</p>
+  </div>
+  <div class="statband">
+    <div class="statband__num">78%</div>
+    <div class="statband__cap">of an average sale is paid <em>directly</em> to the artisan — printed transparently on every product page.</div>
+  </div>
+  <div style="margin-top:26px" class="shot"><img src="./img/makers.png" alt=""></div>
+  <div class="pagenum">02 — Karu</div>
+</section>
+
+<!-- 3 · WHY DIFFERENT -->
+<section class="page">
+  <div class="runhead">Karu · Why it's different</div>
+  <div class="kicker"><span class="eyebrow" style="margin:0">Why it's different</span><span class="pg">02</span></div>
+  <h2 style="font-size:30px;margin-bottom:24px;max-width:16ch">Not competing with Amazon. Competing with art galleries.</h2>
+  <div class="pillars">
+    <div class="pillar"><div class="pillar__n">01</div><div><div class="pillar__t">Verified makers, never anonymous</div><div class="pillar__b">Nobody can simply list. Every artisan is sought out, their workshop visited and documented, and each piece hand-selected before it reaches the gallery.</div></div></div>
+    <div class="pillar"><div class="pillar__n">02</div><div><div class="pillar__t">Fair pay, in the open</div><div class="pillar__b">Between 70–80% of every sale goes directly to the maker — with the exact split shown on every page. No hidden fees, no middlemen taking a cut of the maker's name.</div></div></div>
+    <div class="pillar"><div class="pillar__n">03</div><div><div class="pillar__t">Provenance, guaranteed</div><div class="pillar__b">Every work ships with a digital certificate of authenticity: the maker, the materials, the date, the craft origin, and the maker's mark.</div></div></div>
+    <div class="pillar"><div class="pillar__n">04</div><div><div class="pillar__t">Real scarcity</div><div class="pillar__b">One-of-one works, numbered editions, and small batches — and master pieces released through live auction. When a piece is collected, it is genuinely gone.</div></div></div>
+    <div class="pillar"><div class="pillar__n">05</div><div><div class="pillar__t">Effortless global delivery</div><div class="pillar__b">Insured, museum-grade crating, customs and duties handled end to end, tracked to the door across 30+ countries. Collecting from anywhere, made simple.</div></div></div>
+  </div>
+  <div class="pagenum">03 — Karu</div>
+</section>
+
+<!-- 4 · EXPERIENCE I -->
+<section class="page">
+  <div class="runhead">Karu · The experience</div>
+  <div class="kicker"><span class="eyebrow" style="margin:0">The experience</span><span class="pg">03</span></div>
+  <div class="shotwrap">
+    <div class="shot shot--crop"><img src="./img/cover.png" alt=""></div>
+    <div class="cap"><span class="cap__t">The landing — artisan-led</span><span class="cap__d">Opens on the maker's hands. Every scroll builds the case: who makes it, why it matters, how it reaches you.</span></div>
+  </div>
+  <div class="shotwrap">
+    <div class="shot shot--crop"><img src="./img/product.png" alt=""></div>
+    <div class="cap"><span class="cap__t">The product page</span><span class="cap__d">Full-bleed, gallery-grade imagery you scroll and zoom — then title, story, provenance and the maker's share.</span></div>
+  </div>
+  <div class="pagenum">04 — Karu</div>
+</section>
+
+<!-- 5 · EXPERIENCE II -->
+<section class="page">
+  <div class="runhead">Karu · The experience</div>
+  <div class="kicker"><span class="eyebrow" style="margin:0">The experience</span><span class="pg">04</span></div>
+  <div class="shotwrap">
+    <div class="shot shot--crop"><img src="./img/artisan.png" alt=""></div>
+    <div class="cap"><span class="cap__t">The artisan profile</span><span class="cap__d">Each maker gets a cinematic page — their name, village, lineage, workshop, and the works available now.</span></div>
+  </div>
+  <div class="shotwrap">
+    <div class="shot shot--crop"><img src="./img/collection.png" alt=""></div>
+    <div class="cap"><span class="cap__t">The collection</span><span class="cap__d">A curated gallery, filterable by craft — clay, terracotta, folk — every piece singular and verified.</span></div>
+  </div>
+  <div class="pagenum">05 — Karu</div>
+</section>
+
+<!-- 6 · MODEL -->
+<section class="page">
+  <div class="runhead">Karu · How it works</div>
+  <div class="kicker"><span class="eyebrow" style="margin:0">The model</span><span class="pg">05</span></div>
+  <h2 style="font-size:30px;margin-bottom:24px;max-width:18ch">A curated house — where buying is an experience, and the maker is the point.</h2>
+  <div class="model">
+    <div class="mcard"><span class="e">Curated marketplace</span><h3>Selected, not listed</h3><p>Every artisan is hand-picked and every piece meets a single standard — would this belong in a serious collection? This protects quality, trust, and premium positioning.</p></div>
+    <div class="mcard"><span class="e">Revenue</span><h3>70–80% to the maker</h3><p>The platform takes only what keeps the house running. The split is transparent on every product page, so buyers always know exactly whose work their money supports.</p></div>
+    <div class="mcard"><span class="e">Live auctions</span><h3>Collectors set the value</h3><p>Master works are released to live auction with a maker-set reserve. Because the artisan's share is fixed, every bid increases what they take home.</p></div>
+    <div class="mcard"><span class="e">Commissions</span><h3>Made only for you</h3><p>Collectors can request bespoke work — a family deity, a memorial piece — matched to the right master, estimated, created, documented and shipped.</p></div>
+  </div>
+  <div class="flow">
+    <div><div class="n">01</div><div class="t">Discover</div><div class="b">Browse by craft or maker; read the full story &amp; provenance.</div></div>
+    <div><div class="n">02</div><div class="t">Acquire or bid</div><div class="b">Buy at a fixed price or compete at live auction, in your currency.</div></div>
+    <div><div class="n">03</div><div class="t">We pack &amp; insure</div><div class="b">Museum-grade crating, fully insured, customs handled.</div></div>
+    <div><div class="n">04</div><div class="t">Delivered</div><div class="b">Tracked to your door, certificate of authenticity in hand.</div></div>
+  </div>
+  <div class="shot shot--crop" style="height:56mm;margin-top:22px"><img src="./img/global.png" alt=""></div>
+  <div class="pagenum">06 — Karu</div>
+</section>
+
+<!-- 7 · MARKET / STATUS / CONTACT -->
+<section class="page">
+  <div class="runhead">Karu · Market &amp; status</div>
+  <div class="kicker"><span class="eyebrow" style="margin:0">Who it's for</span><span class="pg">06</span></div>
+  <div class="aud">
+    <div><div class="t">Collectors</div><div class="b">Acquiring authentic, singular pieces with real provenance.</div></div>
+    <div><div class="t">Interior designers</div><div class="b">Sourcing unique, story-rich decor for premium spaces.</div></div>
+    <div><div class="t">Culture enthusiasts</div><div class="b">Valuing heritage, craftsmanship, and ethical purchase.</div></div>
+    <div><div class="t">Gift buyers</div><div class="b">Looking for meaningful, one-of-a-kind gifts that carry a story.</div></div>
+  </div>
+  <p class="fine" style="margin-bottom:26px">Primary markets — United States · United Kingdom · Australia · Canada · Germany · France · Singapore.</p>
+
+  <div class="status">
+    <div class="e">Status — June 2026</div>
+    <ul>
+      <li>Front-end experience demo built &amp; running (Next.js 16, React 19)</li>
+      <li>Artisan-led landing, full-bleed product pages, profiles, auctions</li>
+      <li>Live auction &amp; revenue-split interfaces working (demo data)</li>
+      <li>Warm-earthen design system; private repository, ready to extend</li>
+      <li>Next: real backend, payments, artisan onboarding, logistics</li>
+      <li>Then: brand name &amp; identity, deploy to a global audience</li>
+    </ul>
+  </div>
+
+  <h2 class="endline">A movement to keep traditional crafts <em>alive</em> — and the makers paid.</h2>
+  <div class="contact">
+    <div class="l"><b>Karu</b> — a made by ac build<br>hello@karu.world · made-by-ac.com</div>
+    <div class="fine">© 2026 · Working title · For discussion</div>
+  </div>
+</section>
+
+</body>
+</html>

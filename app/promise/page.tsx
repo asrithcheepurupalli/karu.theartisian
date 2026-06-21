@@ -5,7 +5,7 @@ import Reveal from "@/components/Reveal";
 import { img } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Our Promise — Artisan Reserve",
+  title: "Our Promise — Karu",
   description:
     "How we verify makers, guarantee provenance, pay artisans the majority, commission custom work, and ship craftsmanship safely worldwide.",
 };

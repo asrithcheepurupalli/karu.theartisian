@@ -31,7 +31,7 @@ export default function Footer() {
             </div>
             <div>
               <p className="eyebrow muted">Reach us</p>
-              <a href="mailto:hello@artisanreserve.com">hello@artisanreserve.com</a>
+              <a href="mailto:hello@karu.world">hello@karu.world</a>
               <span className="fine">By appointment, worldwide</span>
             </div>
           </div>
@@ -39,7 +39,7 @@ export default function Footer() {
 
         <div className="site-foot__bar">
           <span className="fine">
-            © {2026} Artisan Reserve · Working title — a curated marketplace for
+            © {2026} Karu · Working title — a curated marketplace for
             Indian craftsmanship.
           </span>
           <span className="fine">

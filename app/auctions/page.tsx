@@ -6,7 +6,7 @@ import AuctionTimer from "@/components/AuctionTimer";
 import { auctionPieces, getArtisan, img, formatPrice } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Live Auctions — Artisan Reserve",
+  title: "Live Auctions — Karu",
   description:
     "Master works and singular pieces, offered through live auction. Scarcity that lets collectors set the value of exceptional craftsmanship.",
 };

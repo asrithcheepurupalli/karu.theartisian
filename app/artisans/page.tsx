@@ -5,7 +5,7 @@ import Reveal from "@/components/Reveal";
 import { artisans, piecesByArtisan, img } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "The Artisans — Artisan Reserve",
+  title: "The Artisans — Karu",
   description:
     "Meet the verified makers behind the collection — the families, traditions, and hands that shape every piece.",
 };

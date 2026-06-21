@@ -30,10 +30,10 @@ export default function Header() {
   return (
     <header className={`site-head ${scrolled ? "is-scrolled" : ""}`}>
       <div className="site-head__inner shell">
-        <Link href="/" className="wordmark" aria-label="Artisan Reserve home">
-          <span className="wordmark__mark">AR</span>
+        <Link href="/" className="wordmark" aria-label="Karu home">
+          <span className="wordmark__mark">K</span>
           <span className="wordmark__name">
-            Artisan <em>Reserve</em>
+            Karu<em>.</em>
           </span>
         </Link>
 
