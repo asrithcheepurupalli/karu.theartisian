@@ -1,5 +1,14 @@
 import Link from "next/link";
 
+// One-click, pre-written email to the studio — for anyone who wants this built.
+const BUILD_MAIL =
+  "mailto:thebrain@made-by-ac.com?subject=" +
+  encodeURIComponent("Karu — build this with us") +
+  "&body=" +
+  encodeURIComponent(
+    "Hi made. team,\n\nI saw Karu and I'd love to talk about building something like it (or working together).\n\nWhat I have in mind:\n\n\nThanks,\n"
+  );
+
 export default function Footer() {
   return (
     <footer className="site-foot">
@@ -43,7 +52,12 @@ export default function Footer() {
             Indian craftsmanship.
           </span>
           <span className="fine">
-            A majority of every sale is paid directly to the maker.
+            Built by{" "}
+            <a href="https://made-by-ac.com" target="_blank" rel="noreferrer">
+              made. by ac
+            </a>{" "}
+            ·{" "}
+            <a href={BUILD_MAIL}>Build this with us →</a>
           </span>
         </div>
       </div>
