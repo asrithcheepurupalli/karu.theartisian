@@ -3,9 +3,9 @@ import CollectionGrid from "@/components/CollectionGrid";
 import { pieces, categories } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "The Collection — Karu",
+  title: "The Collection · Karu",
   description:
-    "Browse the curated gallery of handcrafted Indian art — clay, terracotta, and folk sculpture, each piece verified and singular.",
+    "Browse the curated gallery of handcrafted Indian art: clay, terracotta, and folk sculpture, each piece verified and singular.",
 };
 
 export default function CollectionPage() {

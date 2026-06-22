@@ -19,8 +19,8 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const a = getArtisan(slug);
-  if (!a) return { title: "Artisan — Karu" };
-  return { title: `${a.name} — Karu`, description: a.intro };
+  if (!a) return { title: "Artisan · Karu" };
+  return { title: `${a.name} · Karu`, description: a.intro };
 }
 
 export default async function ArtisanPage({

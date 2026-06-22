@@ -22,9 +22,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const piece = getPiece(slug);
-  if (!piece) return { title: "Piece — Karu" };
+  if (!piece) return { title: "Piece · Karu" };
   return {
-    title: `${piece.title} — Karu`,
+    title: `${piece.title} · Karu`,
     description: piece.blurb,
   };
 }
@@ -228,7 +228,7 @@ export default async function PiecePage({
                 <h2 className="display-lg">From earth to object</h2>
               </div>
               <p className="lead process__lead">
-                {piece.craftAge} — a tradition kept alive by hand.
+                {piece.craftAge}. A tradition kept alive by hand.
               </p>
             </div>
           </Reveal>
@@ -270,7 +270,7 @@ export default async function PiecePage({
             </p>
             <p className="revmoment__cap">
               of this {isAuction ? "hammer price" : "purchase"} is paid{" "}
-              <em>directly</em> to {artisan.name} — the hands that made it.
+              <em>directly</em> to {artisan.name}, the hands that made it.
             </p>
             <Link href="/promise" className="tlink revmoment__link">
               How we pay our makers <span className="arr">→</span>

@@ -90,7 +90,7 @@ export default function PieceGallery({
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={img(g, 1800)}
-              alt={`${title} — view ${i + 1}`}
+              alt={`${title}, view ${i + 1}`}
               loading={i === 0 ? "eager" : "lazy"}
               draggable={false}
             />
@@ -123,7 +123,7 @@ export default function PieceGallery({
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={img(images[active], 2400)}
-            alt={`${title} — view ${active + 1}`}
+            alt={`${title}, view ${active + 1}`}
             className="lightbox__img"
             onClick={(e) => e.stopPropagation()}
           />

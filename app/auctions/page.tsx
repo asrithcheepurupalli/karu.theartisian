@@ -6,7 +6,7 @@ import AuctionTimer from "@/components/AuctionTimer";
 import { auctionPieces, getArtisan, img, formatPrice } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Live Auctions — Karu",
+  title: "Live Auctions · Karu",
   description:
     "Master works and singular pieces, offered through live auction. Scarcity that lets collectors set the value of exceptional craftsmanship.",
 };
@@ -22,7 +22,7 @@ export default function AuctionsPage() {
           <h1 className="display-lg">Where collectors set the value</h1>
           <p className="lead page-head__lead" style={{ color: "rgba(250,247,241,0.72)" }}>
             A handful of master works are released to auction rather than sold at
-            a fixed price. The maker sets the reserve. You decide the rest — and
+            a fixed price. The maker sets the reserve. You decide the rest, and
             the artisan&apos;s share rises with every bid.
           </p>
         </div>

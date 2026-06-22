@@ -19,7 +19,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Karu — Handcrafted in India, collected worldwide",
+  title: "Karu, Handcrafted in India, collected worldwide",
   description:
     "A curated gallery of handcrafted Indian art. Every piece verified, every story preserved, and the majority of every sale paid directly to the maker.",
 };

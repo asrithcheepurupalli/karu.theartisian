@@ -1,5 +1,5 @@
 /* ============================================================
-   ARTISAN RESERVE — Curated data layer
+   ARTISAN RESERVE - Curated data layer
    Working-title demo content. Imagery: art-directed placeholders.
    ============================================================ */
 
@@ -78,7 +78,7 @@ export const artisans: Artisan[] = [
     intro:
       "In the Ghurni quarter of Krishnanagar, Radha Devi shapes river clay into deities so lifelike that collectors say they seem to breathe.",
     story: [
-      "Radha Devi Pal was born into the Ghurni colony of Krishnanagar, where clay modelling has been the family trade since the courts of the Nadia kings commissioned likenesses of their own. Her grandmother taught her to read the moods of the local Jalangi river clay — when it was willing, when it would crack, when to let it rest.",
+      "Radha Devi Pal was born into the Ghurni colony of Krishnanagar, where clay modelling has been the family trade since the courts of the Nadia kings commissioned likenesses of their own. Her grandmother taught her to read the moods of the local Jalangi river clay: when it was willing, when it would crack, when to let it rest.",
       "For four decades she has worked almost entirely by hand and thumb, using a small set of bamboo tools worn smooth by use. She is known for a restraint unusual in devotional work: her figures are quiet, interior, caught in a held breath rather than a grand gesture.",
       "She now trains seven women from her neighbourhood, paying them through the season so the craft does not vanish with her generation. Every piece she releases to Artisan Reserve is one she would have been willing to keep.",
     ],
@@ -96,9 +96,9 @@ export const artisans: Artisan[] = [
     portrait: "1647598378229-a0ec16456b1d",
     workshop: ["1607556671927-78a6605e290b", "1590422886897-7dd50e58577e", "1595351298020-038700609878"],
     intro:
-      "From the idol town of Pen, Anil Kumbhar makes Ganpati figures in natural shadu clay — the kind that returns cleanly to the water it came from.",
+      "From the idol town of Pen, Anil Kumbhar makes Ganpati figures in natural shadu clay, the kind that returns cleanly to the water it came from.",
     story: [
-      "Pen has supplied Maharashtra with its festival idols for over a century. Anil grew up among drying racks of half-finished gods, learning to mould before he learned to write. He broke from the workshop tradition of plaster in his twenties, returning to shadu — a soft, pale clay that dissolves without harming the rivers it is immersed in.",
+      "Pen has supplied Maharashtra with its festival idols for over a century. Anil grew up among drying racks of half-finished gods, learning to mould before he learned to write. He broke from the workshop tradition of plaster in his twenties, returning to shadu, a soft, pale clay that dissolves without harming the rivers it is immersed in.",
       "His insistence on natural clay and mineral pigment made his work slower and more expensive, and for years it cost him buyers. Today it is exactly why collectors seek him out: an idol that is devotional, beautiful, and gentle on the earth.",
       "He works to a strict seasonal rhythm, releasing only a small number of collector pieces each year outside the festival rush.",
     ],
@@ -116,7 +116,7 @@ export const artisans: Artisan[] = [
     portrait: "1713593673489-3abf4784345a",
     workshop: ["1622691078858-58f9eb8825e0", "1508269151431-a34449ca161d", "1590422886897-7dd50e58577e"],
     intro:
-      "In the village of Molela, Mohan Lal raises figures out of flat clay — hollow-backed votive plaques carried to shrines across the Aravalli hills.",
+      "In the village of Molela, Mohan Lal raises figures out of flat clay: hollow-backed votive plaques carried to shrines across the Aravalli hills.",
     story: [
       "Molela's potters are the keepers of a rare relief tradition recognised across India: deities and folk heroes pulled forward out of a single sheet of clay, hollow behind, fired to a warm terracotta orange. Pastoral communities have collected these plaques for their shrines for generations.",
       "Mohan Lal learned the craft at his father's side, pressing coils of clay into raised limbs and crowns. His larger panels can take three weeks of building, drying, and open-kiln firing fed with cow-dung cakes and wood.",
@@ -138,7 +138,7 @@ export const artisans: Artisan[] = [
     intro:
       "Sita Mahato carries the elongated, elegant line of the Bankura terracotta horse into a new generation of folk figures.",
     story: [
-      "The village of Panchmura gave India one of its most recognised craft forms — the long-necked Bankura horse, now a national emblem of Indian handicraft. Sita learned the form from her mother, one of the few women to throw and build at the wheel in a male-dominated potters' lane.",
+      "The village of Panchmura gave India one of its most recognised craft forms: the long-necked Bankura horse, now a national emblem of Indian handicraft. Sita learned the form from her mother, one of the few women to throw and build at the wheel in a male-dominated potters' lane.",
       "Her work keeps the austere, geometric grace of the tradition while introducing her own folk figures: village mothers, musicians, paired animals. Each is burnished by hand before firing to bring up that distinctive deep terracotta sheen.",
       "She splits her year between her own collector work and teaching the form to girls in the village school.",
     ],
@@ -159,7 +159,7 @@ export const pieces: Piece[] = [
     artisan: "radha-devi-pal",
     category: "Clay Sculpture",
     blurb:
-      "The cosmic dancer caught not mid-dance but in the breath before it — a study in restraint from a master of Ghurni clay.",
+      "The cosmic dancer caught not mid-dance but in the breath before it. A study in restraint from a master of Ghurni clay.",
     hero: "1709985774319-bac2214db83b",
     gallery: ["1709985774319-bac2214db83b", "1631446416793-edfbeade1692", "1602305361928-dd4fbb524ed6"],
     price: 2400,
@@ -174,14 +174,14 @@ export const pieces: Piece[] = [
     origin: "Krishnanagar, West Bengal",
     craftAge: "Ghurni clay modelling · 250+ years",
     story: [
-      "Most depictions of Nataraja freeze Shiva at the height of his cosmic dance, ringed in fire. Radha Devi chose the opposite moment — the stillness just before the first step, when the universe is held in suspense.",
+      "Most depictions of Nataraja freeze Shiva at the height of his cosmic dance, ringed in fire. Radha Devi chose the opposite moment: the stillness just before the first step, when the universe is held in suspense.",
       "It is a deeply personal interpretation, modelled entirely by thumb over eleven days from a single mass of river clay. The restraint is the point: power that has not yet been spent.",
       "This is a singular work. There is no edition, no second cast. What you acquire is the only one that will ever exist.",
     ],
     process: [
       {
         title: "Reading the clay",
-        body: "Jalangi river clay is rested, kneaded, and tested by ear — a master can hear when the moisture is right for fine modelling.",
+        body: "Jalangi river clay is rested, kneaded, and tested by ear. A master can hear when the moisture is right for fine modelling.",
         image: "1590605095243-072811dbe64c",
       },
       {
@@ -208,7 +208,7 @@ export const pieces: Piece[] = [
     artisan: "anil-kumbhar",
     category: "Clay Sculpture",
     blurb:
-      "The infant Krishna, modelled in natural shadu clay that returns cleanly to water — devotion without a trace left behind.",
+      "The infant Krishna, modelled in natural shadu clay that returns cleanly to water. Devotion without a trace left behind.",
     hero: "1631446416793-edfbeade1692",
     gallery: ["1631446416793-edfbeade1692", "1622033483171-0554eebfc786", "1616908841648-a4bc4322d64e"],
     price: 1150,
@@ -223,14 +223,14 @@ export const pieces: Piece[] = [
     origin: "Pen, Maharashtra",
     craftAge: "Shadu clay idol making · 120+ years",
     story: [
-      "Bal Gopal — Krishna as a chubby, crawling child — is among the most beloved forms in Indian devotional art. Anil renders him in pale shadu clay, the natural material that dissolves without harming the rivers it returns to.",
+      "Bal Gopal, Krishna as a chubby, crawling child, is among the most beloved forms in Indian devotional art. Anil renders him in pale shadu clay, the natural material that dissolves without harming the rivers it returns to.",
       "Every figure in this edition is finished with pigment Anil grinds and mixes by hand. No synthetic colour is ever used, which is why the tones are soft and slightly different on each piece.",
       "Only twelve will be made. Each is numbered on the base.",
     ],
     process: [
       {
         title: "Natural shadu clay",
-        body: "Sourced locally and purified by hand, shadu is soft, pale, and fully water-soluble — gentle on rivers at immersion.",
+        body: "Sourced locally and purified by hand, shadu is soft, pale, and fully water-soluble, gentle on rivers at immersion.",
         image: "1609881583302-61548332039c",
       },
       {
@@ -252,7 +252,7 @@ export const pieces: Piece[] = [
     artisan: "mohan-lal-prajapati",
     category: "Terracotta",
     blurb:
-      "A hollow-backed votive plaque raised from a single sheet of clay and fired in an open kiln — a living relief tradition of the Aravalli hills.",
+      "A hollow-backed votive plaque raised from a single sheet of clay and fired in an open kiln. A living relief tradition of the Aravalli hills.",
     hero: "1598201910107-775e9be8df22",
     gallery: ["1598201910107-775e9be8df22", "1618935320835-1318740d44b6", "1620745899139-041867b2a477"],
     price: 1680,
@@ -269,7 +269,7 @@ export const pieces: Piece[] = [
     story: [
       "The Molela plaque is a rare relief form: figures are pulled forward out of a flat sheet of clay, hollow behind, then fired to a warm terracotta orange. Pastoral communities have carried these to their shrines for centuries.",
       "Mohan Lal's sun panel takes the radiant solar motif at the heart of the tradition and builds it up in coils and pressed clay over nearly three weeks.",
-      "Fired in a traditional open kiln, no two pieces take the heat identically — the colour variation across the batch is a record of the fire itself.",
+      "Fired in a traditional open kiln, no two pieces take the heat identically. The colour variation across the batch is a record of the fire itself.",
     ],
     process: [
       {
@@ -279,7 +279,7 @@ export const pieces: Piece[] = [
       },
       {
         title: "Raising the relief",
-        body: "Coils and pressed clay build the figures forward, leaving the back hollow — the signature of a true Molela plaque.",
+        body: "Coils and pressed clay build the figures forward, leaving the back hollow, the signature of a true Molela plaque.",
         image: "1611013621103-91e10668a120",
       },
       {
@@ -292,7 +292,7 @@ export const pieces: Piece[] = [
   },
   {
     slug: "bankura-horse-midnight",
-    title: "Bankura Horse — Midnight Pair",
+    title: "Bankura Horse, Midnight Pair",
     artisan: "sita-mahato",
     category: "Folk Terracotta",
     blurb:
@@ -313,7 +313,7 @@ export const pieces: Piece[] = [
     story: [
       "The long-necked Bankura horse is so emblematic of Indian craft that it serves as the logo of the country's handicraft board. Sita keeps its austere, elongated geometry exactly as the tradition demands.",
       "Offered here as a matched pair, hand-burnished before firing so the surface carries a soft, deep sheen rather than a glaze.",
-      "A quiet, architectural object — equally at home on a console table or a gallery plinth.",
+      "A quiet, architectural object, equally at home on a console table or a gallery plinth.",
     ],
     process: [
       {
@@ -339,7 +339,7 @@ export const pieces: Piece[] = [
     artisan: "anil-kumbhar",
     category: "Clay Sculpture",
     blurb:
-      "A master festival idol in natural shadu clay, released for auction — the remover of obstacles, modelled in full seated repose.",
+      "A master festival idol in natural shadu clay, released for auction. The remover of obstacles, modelled in full seated repose.",
     hero: "1622033483171-0554eebfc786",
     gallery: ["1622033483171-0554eebfc786", "1616908841648-a4bc4322d64e", "1590228948056-7c7ac99ab3e7"],
     price: 1900,
@@ -354,7 +354,7 @@ export const pieces: Piece[] = [
     origin: "Pen, Maharashtra",
     craftAge: "Shadu clay idol making · 120+ years",
     story: [
-      "Each year Anil sets aside a single idol he considers his finest work — the one piece he would carry himself to the immersion. This seated Ganesha is that piece for 2026.",
+      "Each year Anil sets aside a single idol he considers his finest work, the one piece he would carry himself to the immersion. This seated Ganesha is that piece for 2026.",
       "Modelled in natural shadu clay and finished with hand-ground mineral pigment, it carries fine 22k gold-leaf detailing on the crown and ornaments.",
       "It is offered through live auction. The maker has set the reserve; the collectors will set the rest.",
     ],
@@ -404,7 +404,7 @@ export const pieces: Piece[] = [
     origin: "Panchmura, West Bengal",
     craftAge: "Bankura terracotta · 300+ years",
     story: [
-      "Where the Bankura horse is all austere line, Sita's Village Mother is warmth held in the same geometry — a figure carrying a child, abstracted to its essentials.",
+      "Where the Bankura horse is all austere line, Sita's Village Mother is warmth held in the same geometry: a figure carrying a child, abstracted to its essentials.",
       "It is a piece she returns to between commissions, refining the proportions a little each time. This one she felt was finally right.",
       "A singular work, hand-burnished and fired in the Panchmura manner.",
     ],
@@ -447,7 +447,7 @@ export const pieces: Piece[] = [
     origin: "Krishnanagar, West Bengal",
     craftAge: "Ghurni clay modelling · 250+ years",
     story: [
-      "The ten-armed Durga is the most demanding form in the Ghurni repertoire — every arm must read as part of a single, balanced gesture rather than ten separate limbs.",
+      "The ten-armed Durga is the most demanding form in the Ghurni repertoire: every arm must read as part of a single, balanced gesture rather than ten separate limbs.",
       "Radha Devi modelled this over thirty-one days. It is the most ambitious work she has released to collectors and, she says, likely the last of this scale she will attempt.",
       "Offered through live auction. A piece for a serious collection.",
     ],
@@ -482,7 +482,7 @@ export const pieces: Piece[] = [
     artisan: "mohan-lal-prajapati",
     category: "Terracotta",
     blurb:
-      "A shallow ritual bowl with a raised lotus relief — the everyday devotional object, made with a master's hand.",
+      "A shallow ritual bowl with a raised lotus relief: the everyday devotional object, made with a master's hand.",
     hero: "1618935320835-1318740d44b6",
     gallery: ["1618935320835-1318740d44b6", "1598201910107-775e9be8df22", "1620745899139-041867b2a477"],
     price: 480,

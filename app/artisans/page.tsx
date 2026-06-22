@@ -5,9 +5,9 @@ import Reveal from "@/components/Reveal";
 import { artisans, piecesByArtisan, img } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "The Artisans — Karu",
+  title: "The Artisans · Karu",
   description:
-    "Meet the verified makers behind the collection — the families, traditions, and hands that shape every piece.",
+    "Meet the verified makers behind the collection: the families, traditions, and hands that shape every piece.",
 };
 
 export default function ArtisansPage() {
@@ -19,7 +19,7 @@ export default function ArtisansPage() {
           <h1 className="display-lg">The hands behind the work</h1>
           <p className="lead page-head__lead">
             We do not list anonymous inventory. Each maker is verified, visited,
-            and given a profile — because the story of the hand is the value of
+            and given a profile, because the story of the hand is the value of
             the object.
           </p>
         </div>

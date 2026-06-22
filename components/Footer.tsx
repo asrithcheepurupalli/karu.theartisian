@@ -3,7 +3,7 @@ import Link from "next/link";
 // One-click, pre-written email to the studio — for anyone who wants this built.
 const BUILD_MAIL =
   "mailto:thebrain@made-by-ac.com?subject=" +
-  encodeURIComponent("Karu — build this with us") +
+  encodeURIComponent("Karu: build this with us") +
   "&body=" +
   encodeURIComponent(
     "Hi made. team,\n\nI saw Karu and I'd love to talk about building something like it (or working together).\n\nWhat I have in mind:\n\n\nThanks,\n"
@@ -48,7 +48,7 @@ export default function Footer() {
 
         <div className="site-foot__bar">
           <span className="fine">
-            © {2026} Karu · Working title — a curated marketplace for
+            © {2026} Karu · Working title, a curated marketplace for
             Indian craftsmanship.
           </span>
           <span className="fine">

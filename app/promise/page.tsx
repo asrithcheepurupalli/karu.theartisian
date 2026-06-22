@@ -5,7 +5,7 @@ import Reveal from "@/components/Reveal";
 import { img } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Our Promise — Karu",
+  title: "Our Promise · Karu",
   description:
     "How we verify makers, guarantee provenance, pay artisans the majority, commission custom work, and ship craftsmanship safely worldwide.",
 };
@@ -21,11 +21,11 @@ const COMMITMENTS = [
   },
   {
     k: "Provenance, guaranteed",
-    b: "Every work ships with a digital certificate of authenticity — the maker, the materials, the date, the craft origin, and the maker's mark. You always know exactly what you hold and whose hands made it.",
+    b: "Every work ships with a digital certificate of authenticity: the maker, the materials, the date, the craft origin, and the maker's mark. You always know exactly what you hold and whose hands made it.",
   },
   {
     k: "Scarcity that is real",
-    b: "One-of-one works, numbered editions, and small batches — never an endless catalogue. When a piece is collected, it is genuinely gone.",
+    b: "One-of-one works, numbered editions, and small batches, never an endless catalogue. When a piece is collected, it is genuinely gone.",
   },
 ];
 
@@ -60,7 +60,7 @@ export default function PromisePage() {
           </h1>
           <p className="lead" style={{ color: "rgba(250,247,241,0.78)" }}>
             Indian craftsmanship has been undervalued for generations. Everything
-            we do is designed to reverse that — transparently, and on the maker&apos;s
+            we do is designed to reverse that, transparently and on the maker&apos;s
             terms.
           </p>
         </div>
@@ -92,7 +92,7 @@ export default function PromisePage() {
               “75% of this purchase goes directly to the artisan.”
             </h2>
             <p className="revband__sub">
-              You will see a line like this on every piece — with a visual
+              You will see a line like this on every piece, with a visual
               breakdown of exactly where your money goes. No guessing, no fine
               print.
             </p>

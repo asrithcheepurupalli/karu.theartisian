@@ -49,7 +49,7 @@ export default function Home() {
           </h1>
           <p className="lp-hero__lead">
             We open the workshop door to the world. Buy directly from India&apos;s
-            finest makers — every piece verified, every story kept, and the
+            finest makers. Every piece verified, every story kept, and the
             majority of each sale paid straight to the hands that made it.
           </p>
           <div className="lp-hero__actions">
@@ -89,7 +89,7 @@ export default function Home() {
           </Reveal>
           <Reveal delay={60}>
             <h2 className="vision__statement">
-              We are India&apos;s artisans — selling{" "}
+              We are India&apos;s artisans, selling{" "}
               <em>direct to the world</em>, for the first time on our own terms.
             </h2>
           </Reveal>
@@ -104,8 +104,8 @@ export default function Home() {
             <Reveal delay={180} className="vision__col">
               <p className="bodytext">
                 Karu exists to end that. A curated house that carries
-                the work of verified masters straight to collectors abroad —
-                preserving the craft, naming the maker, and paying them what they
+                the work of verified masters straight to collectors abroad. It
+                preserves the craft, names the maker, and pays them what they
                 have always deserved.
               </p>
             </Reveal>
@@ -125,7 +125,7 @@ export default function Home() {
             </Reveal>
             <Reveal delay={80}>
               <p className="lead makers__lead">
-                Not anonymous inventory — named masters, each with a village, a
+                Not anonymous inventory. Named masters, each with a village, a
                 lineage, and a craft passed hand to hand for centuries.
               </p>
             </Reveal>
@@ -209,7 +209,7 @@ export default function Home() {
           <Reveal className="flip__copy">
             <p className="eyebrow flip__eyebrow">The difference</p>
             <h2 className="display-lg flip__head">
-              Your money reaches the hand that <em>made it</em> — not a middleman.
+              Your money reaches the hand that <em>made it</em>, not a middleman.
             </h2>
             <p className="flip__sub">
               Every piece prints its split, right on the page. We take only what
@@ -257,7 +257,7 @@ export default function Home() {
           <Reveal className="global__copy">
             <p className="eyebrow">From India to the world</p>
             <h2 className="display-lg global__head">
-              From a village workshop to your home — wherever in the world that
+              From a village workshop to your home, wherever in the world that
               is.
             </h2>
             <p className="lead global__lead">
@@ -268,8 +268,8 @@ export default function Home() {
             <ul className="global__points">
               <li>
                 <span className="global__pt">Insured, museum-grade crating</span>
-                Each piece is packed to survive the journey — built around the
-                object, fully insured.
+                Each piece is packed to survive the journey, built around the
+                object and fully insured.
               </li>
               <li>
                 <span className="global__pt">Customs &amp; duties handled</span>
@@ -325,7 +325,7 @@ export default function Home() {
           <ol className="chapters__list">
             {[
               { n: "01", t: "Discover the maker", b: "Browse by craft or maker. Every piece carries its full story, provenance, and the share that reaches the artisan." },
-              { n: "02", t: "Acquire or bid", b: "Collect at a fixed price, or compete for a master work at live auction — securely, in your currency." },
+              { n: "02", t: "Acquire or bid", b: "Collect at a fixed price, or compete for a master work at live auction, securely and in your currency." },
               { n: "03", t: "We pack & insure", b: "Museum-grade crating built around the piece, fully insured, with customs and duties handled for you." },
               { n: "04", t: "Delivered to your door", b: "Tracked international delivery, with a certificate of authenticity in hand when it arrives." },
             ].map((c, i) => (
@@ -357,7 +357,7 @@ export default function Home() {
           <Reveal>
             <p className="eyebrow closing__eyebrow">Begin collecting</p>
             <h2 className="closing__head">
-              Own a piece of a <em>living tradition</em> — and keep a craft alive.
+              Own a piece of a <em>living tradition</em>, and keep a craft alive.
             </h2>
             <div className="closing__actions">
               <Link href="/collection" className="btn btn--light">
