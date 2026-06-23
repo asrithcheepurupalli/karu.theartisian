@@ -8,6 +8,11 @@ const BUILD_MAIL =
   encodeURIComponent(
     "Hi made. team,\n\nI saw Karu and I'd love to talk about building something like it (or working together).\n\nWhat I have in mind:\n\n\nThanks,\n"
   );
+const BUILD_WA =
+  "https://wa.me/919390852636?text=" +
+  encodeURIComponent(
+    "Hi made. by ac 👋 I saw Karu and I'd love to build something like it with you."
+  );
 
 export default function Footer() {
   return (
@@ -57,7 +62,11 @@ export default function Footer() {
               made. by ac
             </a>{" "}
             ·{" "}
-            <a href={BUILD_MAIL}>Build this with us →</a>
+            <a href={BUILD_MAIL}>Build this with us</a>{" "}
+            ·{" "}
+            <a href={BUILD_WA} target="_blank" rel="noreferrer">
+              WhatsApp →
+            </a>
           </span>
         </div>
       </div>
