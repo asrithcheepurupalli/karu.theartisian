@@ -11,7 +11,7 @@ const BUILD_MAIL =
 const BUILD_WA =
   "https://wa.me/919390852636?text=" +
   encodeURIComponent(
-    "Hi made. by ac 👋 I saw Karu and I'd love to build something like it with you."
+    "Hi made. by ac — I saw Karu and I'd love to build something like it with you."
   );
 
 export default function Footer() {
