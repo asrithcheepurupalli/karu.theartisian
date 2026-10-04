@@ -62,6 +62,10 @@ export default function Footer() {
               made. by ac
             </a>{" "}
             ·{" "}
+            <a href="/privacy">Privacy</a>{" "}
+            ·{" "}
+            <a href="/terms">Terms</a>{" "}
+            ·{" "}
             <a href={BUILD_MAIL}>Build this with us</a>{" "}
             ·{" "}
             <a href={BUILD_WA} target="_blank" rel="noreferrer">
