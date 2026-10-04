@@ -19,9 +19,18 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://karu.made-by-ac.com"),
   title: "Karu, Handcrafted in India, collected worldwide",
   description:
     "A curated gallery of handcrafted Indian art. Every piece verified, every story preserved, and the majority of every sale paid directly to the maker.",
+  openGraph: {
+    type: "website",
+    siteName: "Karu",
+    title: "Karu, Handcrafted in India, collected worldwide",
+    description: "A concept study: a curated gallery of handcrafted Indian art, with every story preserved.",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Karu: handcrafted in India, collected worldwide" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/og.png"] },
 };
 
 export default function RootLayout({
